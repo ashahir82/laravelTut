@@ -163,7 +163,7 @@
             <!-- Content area -->
             <div class="content">
             {{-- Show validation error if it occurs --}}
-{{--            @include('partials.notification')--}}
+            @include('partials.notofication')
             @yield('content')
 
             <!-- Footer -->

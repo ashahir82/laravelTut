@@ -123,7 +123,7 @@
     <li @if (Request::segment(2) == 'user') class="active" @endif>
         <a href="#"><i class="icon-users"></i> <span>User Management</span></a>
         <ul>
-            <li><a href="/admin/user/create">Create New User</a></li>
+            <li><a href="/user/create">Create New User</a></li>
             <li><a href="/admin/user">All Users</a></li>
         </ul>
     </li>
