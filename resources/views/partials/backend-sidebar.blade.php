@@ -124,9 +124,18 @@
         <a href="#"><i class="icon-users"></i> <span>User Management</span></a>
         <ul>
             <li><a href="/user/create">Create New User</a></li>
-            <li><a href="/admin/user">All Users</a></li>
+            <li><a href="/user">All Users</a></li>
         </ul>
     </li>
+
+    <li @if (Request::segment(2) == 'user') class="active" @endif>
+        <a href="#"><i class="icon-users"></i> <span>Student Management</span></a>
+        <ul>
+            <li><a href="/student/create">Create New Student</a></li>
+            <li><a href="/student">All Students</a></li>
+        </ul>
+    </li>
+
     <li @if (Request::segment(2) == 'audit-trail') class="active" @endif><a href="/admin/audit-trail">
             <i class="icon-list"></i> <span>Audit Trail</span></a></li>
     <li @if (Request::segment(2) == 'lookups') class="active" @endif>
